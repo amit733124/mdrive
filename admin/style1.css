@@ -1,0 +1,130 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+ul
+{
+	float: right;
+	list-style: none;
+	margin-top: 10px;
+
+}
+ul li
+{
+	display: inline-block;
+}
+ul li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto",sans-serif;
+	transition: 0.6s ease;
+	border:1px solid transparent;
+border-radius: 5px;
+}
+ul li a:hover
+{
+	background-color: white;
+	color:black;
+}
+ul li.active a{
+	background-color: white;
+	color:black;
+}
+.logo img
+{
+	width: 80px;
+	height: auto;
+	padding-top: 15px;
+	padding-left: 10px;
+	float: left;
+}
+.main
+{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	}
+.title h1
+{
+	color: white;
+	text-transform:uppercase;
+font-size: 30px;
+text-align: center;
+margin-top: 275px;
+animation:type 6s steps(22);
+overflow: hidden;
+white-space: nowrap;
+
+}
+
+@keyframes type{
+	0%{
+            width: 0ch;
+	}
+	100%
+	{
+		width: 100%;
+	}
+}
+.button
+{
+	margin-top: 50px;
+	margin-left: 540px;
+}
+.btn
+{
+	border: 1px solid white;
+	padding:10px 30px;
+	color:white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+.btn-one
+{
+	background-color: darkorange;
+	font-family: "Roboto",sans-serif;
+}
+.btn-one:hover
+{
+	background-color: green;
+	font-family: "Roboto",sans-serif;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 10%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; 
+
+}

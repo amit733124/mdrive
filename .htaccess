@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^(.*)\.welcome $1.php
+RewriteRule ^article_detail/([a-zA-Z0-9_-]+)/([0-9]+)\.html$ article_detail.php?article_det=$2
+Options +FollowSymLinks
+ErrorDocument 404 <center><h1>Page_Not_Found<br><br>404_Error</h1></center>
